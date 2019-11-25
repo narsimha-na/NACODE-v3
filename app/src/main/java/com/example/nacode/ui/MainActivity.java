@@ -1,8 +1,10 @@
-package com.example.nacode;
+package com.example.nacode.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.nacode.R;
 
 public class MainActivity extends AppCompatActivity {
 

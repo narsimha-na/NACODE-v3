@@ -11,13 +11,10 @@ import android.view.ViewGroup;
 
 import com.example.nacode.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class LoginAuthenticaton extends Fragment {
+public class OtpFragment extends Fragment {
 
 
-    public LoginAuthenticaton() {
+    public OtpFragment() {
         // Required empty public constructor
     }
 
@@ -26,7 +23,7 @@ public class LoginAuthenticaton extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login_authenticaton, container, false);
+        return inflater.inflate(R.layout.fragment_otp, container, false);
     }
 
 }
