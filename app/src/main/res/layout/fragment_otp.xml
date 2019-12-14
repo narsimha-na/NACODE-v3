@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="25dp"
+    android:background="@color/primaryDarkColor"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.authentication.OtpFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="25dp"
         android:fontFamily="@font/fredoka_one"
+        android:padding="15dp"
         android:text="NA CODE"
-        android:textColor="@color/lightPrimaryColor"
+        android:textColor="@color/white"
         android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -26,34 +29,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:visibility="visible"
         android:orientation="vertical"
+        android:layout_margin="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/bigText"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
-            android:fontFamily="@font/fredoka_one"
-            android:text="Enter your phone number"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            android:text="Enter your phone number" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/smallText"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:text="please enter valid 10 digit mobile number , a six digit OTP will be sent to your mobile number"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/textColor"
-            app:helperTextTextAppearance="@color/textColor">
+            android:textColorHint="@color/white"
+            app:helperTextTextAppearance="@color/white">
 
             <EditText
                 android:id="@+id/of_username"
@@ -72,13 +71,11 @@
 
 
         <TextView
-            style="@style/smallText"
+            style="@style/bigText"
+            android:textSize="20sp"
             android:id="@+id/of_any_problem"
             android:layout_marginTop="25dp"
-            android:fontFamily="@font/ubuntu_bold"
-            android:text="any problem !"
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            android:text="any problem !"/>
 
     </LinearLayout>
 
@@ -88,28 +85,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:visibility="gone"
         android:orientation="vertical"
+        android:layout_margin="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/bigText"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
-            android:fontFamily="@font/fredoka_one"
-            android:text="Enter your OTP"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            android:text="Enter your OTP" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/smallText"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:text="please enter  a six digit OTP will be sent to your mobile number"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:text="please enter  a six digit OTP will be sent to your mobile number" />
 
         <com.mukesh.OtpView
             android:id="@+id/otp_view"
@@ -132,12 +124,10 @@
 
 
         <TextView
-            style="@style/smallText"
+            style="@style/bigText"
             android:id="@+id/lf_sign_up"
             android:layout_marginTop="25dp"
-            android:fontFamily="@font/ubuntu_bold"
             android:text="not a user ? signup "
-            android:textColor="@color/colorPrimary"
             android:textSize="18sp" />
 
     </LinearLayout>

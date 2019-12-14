@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/primaryDarkColor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="25dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.authentication.SignUpFragment">
 
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/fredoka_one"
         android:text="NA CODE"
-        android:textColor="@color/lightPrimaryColor"
+        android:textColor="@color/white"
         android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -25,26 +26,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_margin="25dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/bigText"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             android:fontFamily="@font/fredoka_one"
-            android:text="Sign Up with your details"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            android:text="Sign Up" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/textColor"
-            app:helperTextTextAppearance="@color/textColor">
+
+            android:textColorHint="@color/white"
+            app:helperTextTextAppearance="@color/white">
 
             <EditText
                 android:id="@+id/suf_name"
@@ -56,8 +56,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/textColor"
-            app:helperTextTextAppearance="@color/textColor">
+            android:textColorHint="@color/white"
+            app:helperTextTextAppearance="@color/white">
 
             <EditText
                 android:id="@+id/suf_email"
@@ -69,8 +69,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/textColor"
-            app:helperTextTextAppearance="@color/textColor">
+            android:textColorHint="@color/white"
+            app:helperTextTextAppearance="@color/white">
 
             <EditText
                 android:id="@+id/suf_password"
@@ -81,8 +81,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/textColor"
-            app:helperTextTextAppearance="@color/textColor">
+            android:textColorHint="@color/white"
+            app:helperTextTextAppearance="@color/white">
 
             <EditText
                 android:id="@+id/suf_phone"
@@ -101,13 +101,11 @@
 
 
         <TextView
-            style="@style/smallText"
-            android:id="@+id/suf_sign_up"
+            style="@style/bigText"
+            android:id="@+id/suf_login"
             android:layout_marginTop="25dp"
-            android:fontFamily="@font/ubuntu_bold"
-            android:text="already a user ? login "
-            android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:text="already a user ? login " />
 
     </LinearLayout>
 

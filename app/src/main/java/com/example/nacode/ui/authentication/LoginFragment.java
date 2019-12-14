@@ -35,7 +35,7 @@ public class LoginFragment extends Fragment {
         lfView.findViewById(R.id.lf_sign_up).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.signUpFragment);
+                Navigation.findNavController(view).navigate(R.id.otpFragment);
             }
         });
 
