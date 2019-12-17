@@ -9,6 +9,7 @@
     tools:context=".ui.authentication.SignUpFragment">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/fredoka_one"
@@ -21,12 +22,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ProgressBar
+        android:id="@+id/su_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_margin="25dp"
+        android:visibility="visible"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,12 +54,11 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:textColorHint="@color/white"
             app:helperTextTextAppearance="@color/white">
 
             <EditText
-                android:id="@+id/suf_name"
+                android:id="@+id/su_name"
                 style="@style/editText"
                 android:hint="name"
                 android:inputType="textEmailAddress" />
@@ -60,7 +71,7 @@
             app:helperTextTextAppearance="@color/white">
 
             <EditText
-                android:id="@+id/suf_email"
+                android:id="@+id/su_email"
                 style="@style/editText"
                 android:hint="email"
                 android:inputType="textEmailAddress" />
@@ -73,7 +84,7 @@
             app:helperTextTextAppearance="@color/white">
 
             <EditText
-                android:id="@+id/suf_password"
+                android:id="@+id/su_password"
                 style="@style/editText"
                 android:hint="password"
                 android:inputType="textPassword" />
@@ -85,7 +96,7 @@
             app:helperTextTextAppearance="@color/white">
 
             <EditText
-                android:id="@+id/suf_phone"
+                android:id="@+id/su_phone"
                 style="@style/editText"
                 android:hint="mobile number"
                 android:inputType="phone" />
@@ -94,7 +105,7 @@
 
         <Button
             style="@style/buttonMain"
-            android:id="@+id/suf_sign_up_button"
+            android:id="@+id/su_sign_up_button"
             android:layout_marginTop="18dp"
             android:text="sign up"
             android:textAlignment="center" />
@@ -102,7 +113,7 @@
 
         <TextView
             style="@style/bigText"
-            android:id="@+id/suf_login"
+            android:id="@+id/su_login"
             android:layout_marginTop="25dp"
             android:textSize="18sp"
             android:text="already a user ? login " />
